@@ -91,10 +91,7 @@ void solve() {
   int l=0, r=1e9, mid;
   while(l<=r){
     mid=(l+r)/2;
-    if(can(mid))
-      r=mid-1;
-    else 
-      l=mid+1;
+    can(mid)?r=mid-1:l=mid+1;
   }
   cout<<l<<endl;
 }
